@@ -1,9 +1,3 @@
-/*
-    Trivial application that displays a string
-*/
-
-import java.util.*;
-
 public class UseMyArrayList 
 {
 
@@ -14,8 +8,7 @@ public class UseMyArrayList
 
     System.out.println();
 
-    MyArrayList mya = new MyArrayList(100);
-
+    MyArrayList mya = new MyArrayList();
 
     // create some objects to fill into the array
     String s = "Sammy";
@@ -78,4 +71,3 @@ public class UseMyArrayList
 
     }
 }
-
