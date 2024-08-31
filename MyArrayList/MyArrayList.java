@@ -87,7 +87,7 @@ public class MyArrayList
         if(i >= 0 && i < numElements) 
         {
             Object temp = list[i];
-            for(int x = i; j < numElements - 1; x++) 
+            for(int x = i; x < numElements - 1; x++) 
             {
                 list[x] = list[x + 1];
             }
