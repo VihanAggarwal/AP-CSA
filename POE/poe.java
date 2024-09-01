@@ -23,17 +23,17 @@ public class poe {
       }
 
       if (wordCounts.containsKey(str)) {
-        wordCounts.put(str, wordCounts.get(str) + 1);
+        wordCounts.put(str, wordCounts.get(str) + 1);  //Word Repeats
       } else {
-        wordCounts.put(str, 1);
+        wordCounts.put(str, 1);  //Unique Words
         uniqueWords++;
         listOfUniqueWords.add(str);
       }
 
-      numOfWords++;
+      numOfWords++;  //Total Number of Words
       if (valMostFrequentWord < wordCounts.get(str)) {
         valMostFrequentWord = wordCounts.get(str);
-        mostFrequentWord = str;
+        mostFrequentWord = str;  //Finds the Most Frequent Word
       }
     }
 
@@ -49,15 +49,22 @@ public class poe {
     // Bubble Sort
     String[] bubbleSort = listOfUniqueWords.toArray(new String[listOfUniqueWords.size()]);
     startTime = System.nanoTime();
-    for (int i = 0; i < bubbleSort.length - 1; i++) {
+    for (int i = 0; i < bubbleSort.length - 1; i++){
+      Boolean swapped = false;
       for (int x = 0; x < bubbleSort.length - 1 - i; x++) {
         if (bubbleSort[x].compareTo(bubbleSort[x + 1]) > 0) {
           String temp = bubbleSort[x];
           bubbleSort[x] = bubbleSort[x + 1];
           bubbleSort[x + 1] = temp;
+          swapped = true;
         }
       }
+      if (!swapped) {
+        break;
+      }
     }
+
+    
     endTime = System.nanoTime();
     System.out.println("Bubble Sort Time Elapsed: " + (endTime - startTime) + " nanoseconds");
 
