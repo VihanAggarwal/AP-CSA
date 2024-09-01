@@ -1,1 +1,23 @@
-
+--------------------------------------
+Total Number of Words in poe.txt is: 2336
+Total Number of Unique Words is: 814
+the is the most frequent word and it occurs: 168 times
+--------------------------------------
+SORTING
+Bubble Sort Time Elapsed: 33191100 nanoseconds
+Default Array Sort Time Elapsed: 4103900 nanoseconds
+--------------------------------------
+Enter the Word to Search: the
+--------------------------------------
+Hashmap Search
+the WORD FOUND and the amount of times it occurs is: 168
+Elapsed Time is: 4103900
+--------------------------------------
+Sequential Search
+the WORD FOUND and the amount of times it occurs is: 168
+Sequential Search Time Elapsed: 2743300 nanoseconds
+--------------------------------------
+Binary Search
+the WORD FOUND and the amount of times it occurs is: 168
+Binary Search Time Elapsed: 9248000 nanoseconds
+--------------------------------------
